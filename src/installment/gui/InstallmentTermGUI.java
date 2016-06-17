@@ -523,6 +523,7 @@ public class InstallmentTermGUI extends javax.swing.JFrame {
         loanScheduleTable.setValueAt("Total", row, 0);
         loanScheduleTable.setValueAt("$" + nf.format(totalPayments), row, 1);
         loanScheduleTable.setValueAt("$" + nf.format(totalPrinPayments), row, 2);
+        loanScheduleTable.setValueAt("$" + nf.format(totalIntPayments), row, 3);
 
         if (payFreq == PayFrequency.BI_WEEKLY.getLoanPeriod()) {
             paymentLabel.setText("Bi-Weekly Payment:");
